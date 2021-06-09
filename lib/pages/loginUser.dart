@@ -263,7 +263,7 @@ class _LoginUserState extends State<LoginUser> {
         } else {
           //     Navigator.pushNamed(context, "/homePage");
           Navigator.pushReplacement(
-              context, MaterialPageRoute(builder: (context) => HomePage()));
+              context, MaterialPageRoute(builder: (context) => MainScreen()));
           formKey.currentState.reset();
         }
       }).catchError((onError) {
@@ -578,7 +578,7 @@ class _LoginUserState extends State<LoginUser> {
                           Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => HomePage()));
+                                  builder: (context) => MainScreen()));
                         }).catchError((hata) {});
                       }
                     },
